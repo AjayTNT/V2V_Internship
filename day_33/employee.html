@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        form {
+            position: relative;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px#919090e1;
+            background: linear-gradient(rgb(91, 165, 175), rgb(3, 217, 255));
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-div">
+            <h2>Employee Registration form</h2>
+            <form action="insert.php" method="post">
+                <label for="pname">Employee Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="designation">Designation:</label>
+                <input type="text" id="designation" name="designation" required>
+
+                <label for="add">Address:</label>
+                <input type="text" id="add" name="add">
+
+                <input type="submit" value="Submit" style="background-color: rgb(255, 85, 85);">
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

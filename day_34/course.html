@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: url(bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .justify-content-center {
+            height: 100vh;
+            align-items: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: rgb(3, 3, 3);
+        }
+
+        .col-lg-4 {
+            height: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 8px whitesmoke;
+            margin: 30px 0 0;
+            background: transparent;
+            backdrop-filter: blur(5px);
+        }
+
+        label {
+            font-weight: 400;
+            color: white;
+        }
+
+        input {
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row justify-content-center">
+        <div class="col-10 col-sm-6 col-lg-4">
+            <form action="course.php" method="post">
+                <div class="row">
+                    <h2>New Course<span> <i class="fa-solid fa-book"></i></span></h2>
+
+                    <div class="col-12">
+                        <label for="course_code_input">Course Code:</label>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input id="course_code_input" class="form-control" name="code" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="course_name_input">Course Name:</label>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input id="course_name_input" class="form-control" name="name" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="course_dure_select">Course Duretion:</label>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <select id="course_dure_select" class="form-select" name="dur">
+                            <option selected>--select--</option>
+                            <option value="3">3 Months</option>
+                            <option value="6">6 Months</option>
+                            <option value="9">9 Months</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="course_fee_input">Course Fees:</label>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <input id="course_fee_input" class="form-control" type="number" name="fees" required>
+                    </div>
+                    <div class="col-6 d-grid mx-auto">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
