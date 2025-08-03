@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year Check</title>
+    <style>
+        body {
+            font-family: Verdana;
+            margin-left: 30px;
+        }
+
+        input {
+            margin-left: 30px;
+            padding: 20px;
+            height: 40px;
+            width: 200px;
+            border-radius: 450px;
+            font-size: 40px;
+            background-color: aqua;
+        }
+
+        button {
+            height: 60px;
+            width: 150px;
+            border-radius: 30px;
+            margin-left: 50px;
+            font-size: 25px;
+            background-color: aquamarine;
+        }
+
+        .box-1 {
+            height: 100px;
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            font-size: 50px;
+        }
+
+        #highlight {
+            text-decoration: underline;
+            color: rgb(9, 95, 253);
+            margin-right: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="font-size: 40px;">Enter Number To Check Prime/Not Prime</h1>
+    <div class="box-1">
+        <label style="font-size: 40px;">Number:</label>
+        <input type="number" id="number">
+        <button id="button" onclick="checnumber()">CHECK</button>
+    </div>
+    <div style="display: flex;">
+        <p id="highlight"></p>
+        <p id="result"></p>
+    </div>
+    <script>
+        function isPrime(n) {
+            if (n <= 1) return false;
+            if (n === 2) return true;
+            if (n % 2 === 0) return false;
+            for (let i = 3; i <= Math.sqrt(n); i += 2) {
+                if (n % i === 0) return false;
+            }
+            return true;
+        }
+        function checnumber() {
+            let number = parseInt(document.getElementById("number").value);
+            document.getElementById("highlight").innerText = number;
+            if (isPrime(number)) {
+                document.getElementById("result").innerText = " is Prime Number.";
+            } else {
+                document.getElementById("result").innerText = " is Not Prime Number.";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Apointment</title>
+    <style>
+        .form-container {
+            background: #ffffff;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Bethani Hospital Appointment <span class="glyphicon glyphicon-bed"></span></h2>
+
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input class="form-control" type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input class="form-control" type="number" name="age" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" name="gender" required>
+                    <option value="">--Select--</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Appointment Date</label>
+                <input class="form-control" type="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Preferred Time</label>
+                <input class="form-control" type="time" name="time">
+            </div>
+            <div class="form-group">
+                <label for="department">Department</label>
+                <select class="form-control" name="department" required>
+                    <option value="">--Select Department--</option>
+                    <option>General Medicine</option>
+                    <option>Cardiology</option>
+                    <option>Orthopedics</option>
+                    <option>Pediatrics</option>
+                    <option>Dermatology</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Additional Notes</label>
+                <textarea class="form-control" name="message" placeholder="Write any symptoms or notes..."></textarea>
+            </div>
+            <button class="btn btn-success btn-block" type="submit">Book Appointment <span
+                    class="glyphicon glyphicon-user"></span></button>
+        </form>
+    </div>
+</body>
+
+</html>

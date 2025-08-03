@@ -1,0 +1,6 @@
+take percentage and identifie grade 4 grades
+cheak number is leaf year
+cheak number positive or negitive
+wrt prg to print table of 5
+wrt prg cheak number is prime or not
+wrt a prg to print number 100 to 1

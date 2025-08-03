@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving Licence Form</title>
+</head>
+<body>
+     <h1 style="font-size:50px;font-family:Times New Roman;font-weight: bold;text-align: center;margin-bottom: 50px;">
+        Driving Licence Registration</h1>
+    <div class="container" style="display: flex;justify-content: space-around;">
+        <form>
+            <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control"
+                        placeholder="Enter email" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="number" class="form-control"
+                        placeholder="Enter phone" name="phone">
+                </div>
+                <div class="form-group">
+                     <label>Date Of Birth<input type="date" name="date" class="form-control"></label>
+                </div>
+                 <div class="form-group">
+      <label for="phone">Adhar Number</label>
+      <input type="number" class="form-control" placeholder="Enter Adhar" name="adhar">
+    </div>      
+        </form>
+        <form >   
+    <div class="form-group">
+        <label for="Year">State</label>
+        <select class="form-control">
+            <option>--Select--</option>
+            <option>Maharashtra</option>
+            <option>Karnataka</option>
+            <option>Madhya Pradesh</option>
+            <option>Punjab</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Year">City</label>
+        <select class="form-control">
+            <option>--Select--</option>
+            <option>Mumbai</option>
+            <option>Thane</option>
+            <option>Pune</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="Year">RTO Office</label>
+        <select class="form-control">
+            <option>--Select--</option>
+            <option>Luis Wadi</option>
+            <option>Court Naka</option>
+            <option>Kalwa</option>
+        </select>
+    </div>
+    <div class="form-group">
+                    <label for="Adress">Address</label>
+                    <textarea type="text" class="form-control"
+                        placeholder="Enter Address" name="Address"></textarea>
+                </div>
+        </form>
+    </div>
+    <div class="container" style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
+         
+                <div class="checkbox">
+                    <label><input type="checkbox" name="remember">I
+                        agree</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</body>
+</html>

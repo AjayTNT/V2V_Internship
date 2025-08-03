@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dominos Pizza</title>
+    </head>
+    <body>
+        <nav style="display: flex;margin-left: 400px;">
+            <div
+                style="font-size: 50px;font-family: Georgia;font-weight: bolder;">Order</div>
+            <div style="display: flex; margin-left: 150px;">
+                <img src="logo.png" height="100px">
+                <h1 style="color: #007BAD;font-size: 50px;">Dominos Pizza
+                    🍕</h1>
+            </div>
+        </nav>
+        <div class="container" style="display: flex; justify-content: space-around;">
+            <form action>
+                <h2>Select Pizza</h2>
+                <div class="form-group">
+                    <label class="form-control"><input type="radio" name="select" value="Veg">Veg 
+                    <input type="radio" name="select" value="Non-Veg" style="margin-left: 30px;">Non-Veg</label>
+                </div>
+                 <div class="form-group">
+                    <label class="form-control"><input type="checkbox" name="remember">Small (4pc)
+                    <input type="number" name="number" min="0" max="10"></label>
+                </div>
+                 <div class="form-group">
+                    <label class="form-control"><input type="checkbox" name="remember">Medium (6pc)
+                    <input type="number" name="number" min="0" max="10"></label>
+                </div>
+                <div class="form-group">
+                    <label class="form-control"><input type="checkbox" name="remember">Large (8pc)
+                     <input type="number" name="number" min="0" max="10"></label>
+                </div>
+                <div class="form-group">
+                    <label class="form-control"><input type="checkbox" name="remember">Extra Large (12pc)
+                     <input type="number" name="number" min="0" max="10"></label>
+                </div>
+                  <div class="form-group">
+                    <label for="toppings">Toppings</label>
+                    <label class="form-control">
+                        <input type="checkbox" name="remember">pepperoni
+                        <input type="checkbox" name="remember">mushrooms
+                        <input type="checkbox" name="remember">black olives
+                        <input type="checkbox" name="remember">extra cheese
+                    </label>
+                </div>
+                 <div class="form-group">
+        <label for="Year">Payment:<input type="number"></label>
+        <select class="form-control">
+            <option>COD</option>
+            <option>Google Pay</option>
+            <option>Credit Card</option>
+        </select>
+    </div>
+            </form>
+            <form method="get">
+                <h2>Customer Details</h2>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control"
+                        placeholder="Enter email" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="number" class="form-control"
+                        placeholder="Enter phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control"
+                    placeholder="Enter email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="Adress">Address</label>
+                    <textarea type="text" class="form-control"
+                        placeholder="Enter Address" name="Address"></textarea>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="remember">I
+                        agree</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Place Order</button>
+            </form>
+        </div></body></html>
