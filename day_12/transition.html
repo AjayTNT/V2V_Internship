@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zoom Effect</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .zoom-box {
+      width: 400px;
+      height: 300px;
+      background-color: skyblue;
+      transition: transform 0.3s ease;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .zoom-box:hover {
+      transform: scale(1.25); /* 500/400 = 1.25, 400+100 = 500 */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="zoom-box"></div>
+    <div class="zoom-box"></div>
+    <div class="zoom-box"></div>
+    <div class="zoom-box"></div>
+    <div class="zoom-box"></div>
+  </div>
+
+</body>
+</html>

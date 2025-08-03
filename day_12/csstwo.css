@@ -1,0 +1,26 @@
+#main{ display: flex;
+    flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: solid 3px;
+            width: 80%;
+            
+        }
+        #top{
+            background-color: orange;
+            width: 100%;
+        }
+        #middle{
+            color: blue;
+            width: 80%;
+        }
+        #bottom{
+            background-color: green;
+            width: 100%;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
