@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+</head>
+
+<body style="background-color: #F7F7F7;">
+    <h1 style="text-align: center;">Move Image</h1>
+    <img src="https://i.pinimg.com/736x/24/43/0d/24430de073cd37cf95ff1759946e0d30.jpg"
+        style="height: 500px;width: 300px;"><br>
+    <button id="left" style="margin-left: 600px;">Left</button>
+    <button id="right" style="margin-left: 300px;">Right</button>
+    <script>
+        $(document).ready(function () {
+            $("#right").click(function () {
+                $("img").animate({ margin: '0 0 0 +=30px' }, 300);
+            });
+            $("#left").click(function () {
+                $("img").animate({ margin: '0 0 0 -=30px' }, 300);
+            });
+            $("img").mouseenter(function () {
+                $("img").animate({ height: '600px', width: '400px' }, 300);
+            });
+            $("img").mouseleave(function () {
+                $("img").animate({ height: '500px', width: '300px' }, 300);
+            });
+        });
+    </script>
+</body>
+
+</html>

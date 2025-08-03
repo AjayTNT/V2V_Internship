@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            background-color: aqua;
+        }
+
+        button {
+            margin-top: 400px;
+            margin-left: 800px;
+        }
+    </style>
+</head>
+<div class="box"></div>
+<button>OK</button>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $(".box").animate({ left: '90vw' }, 'slow');
+                $(".box").animate({ top: '79vh' }, 'slow');
+                $(".box").animate({ left: '0' }, 'slow');
+                $(".box").animate({ top: '0' }, 'slow');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Enter Number:</label>
+    <input type="number" id="num">
+    <button onclick="numchecker()">OK</button>
+    <p id="result"></p>
+    <script>
+        function numchecker() {
+            let x = parseInt(document.getElementById("num").value);
+            if (x > 0) {
+                document.getElementById("result").innerHTML = `${x} Number is Positive`;
+            }
+            else {
+                document.getElementById("result").innerHTML = `${x} Number is Negetive`;
+            }
+        }
+    </script>
+</body>
+
+</html>

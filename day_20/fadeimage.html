@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <button id="fadein">fade in</button>
+    <button id="fadeout">fade out</button><br><br>
+    <img src="https://png.pngtree.com/png-clipart/20240614/original/pngtree-sharingan-eyes-of-uchiha-from-naruto-vector-png-image_15322269.png"
+        style="display: none; height: 600px;">
+    <script>
+        $(document).ready(function () {
+            $("#fadeout").click(function () {
+                $("img").fadeOut(3000);
+            });
+            $("#fadein").click(function () {
+                $("img").fadeIn(3000);
+            });
+
+        });
+    </script>
+</body>
+
+</html>

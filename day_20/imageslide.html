@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#down").click(function () {
+                $("#panel").slideDown("slow");
+            });
+            $("#up").click(function () {
+                $("#panel").slideUp("slow");
+            });
+        });
+    </script>
+    <style>
+        #panel {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button id="down">Click to slide Down Image</button>
+    <button id="up">Click to slide Up Image</button>
+    <div id="panel"><img src="https://i.pinimg.com/736x/ed/61/0f/ed610f609643879eecf03b5ee3a268ee.jpg"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<label for="number">Enter Number:</label>
+<input type="number" id="num">
+<button type="button" onclick="evenOdd()">OK</button>
+<p id="result"></p>
+
+<body>
+    <script>
+        function evenOdd() {
+            let x = document.getElementById("num").value;
+            if (x % 2 == 0) {
+                document.getElementById("result").innerHTML = `${x} is even`;
+            }
+            else {
+                document.getElementById("result").innerHTML = `${x} is odd`;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

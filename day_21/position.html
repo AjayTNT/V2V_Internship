@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+            overflow: hidden;
+        }
+
+        button {
+            margin-top: 200px;
+        }
+
+        #box {
+            position: absolute;
+            height: 150px;
+            width: 150px;
+            background-color: aqua;
+            left: -150px;
+            transition: left 1.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+    <button onclick="slide()">OK</button>
+    <script>
+        const box = document.getElementById("box");
+        let moveRight = true;
+
+        setInterval(() => {
+            if (moveRight) {
+                box.style.left = "100vw"; // move right
+            } else {
+                box.style.left = "-150px";   // move left
+            }
+            moveRight = !moveRight; // toggle direction
+        }, 1000); //
+    </script>
+</body>
+
+</html>

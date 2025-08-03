@@ -1,0 +1,7 @@
+wrt js program using switch case for days of the weeks
+wrt js function which will check wether the number is prime or not
+wrt a jquery prgm to hide and shgow image
+wrt jquery prgm to slide up and down image
+wrt a jqury prgm to fadein and fadeout image
+wrt a jquery prgm to animate image
+https://img.freepik.com/free-psd/isolated-plane-details_23-2151839970.jpg?semt=ais_hybrid&w=740

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <p>Demonstrate fadeIn() with different parameters.</p>
+    <button id="fadein">fade in</button><br><br>
+    <button id="fadeout">fade out</button><br><br>
+    <img src="https://easydrawingguides.com/wp-content/uploads/2017/05/how-to-draw-naruto-featured-image-1200.png"
+        style="display: none; height: 600px;">
+    <script>
+        $(document).ready(function () {
+            $("#fadeout").click(function () {
+                $("img").fadeOut(3000);
+            });
+            $("#fadein").click(function () {
+                $("img").fadeIn(3000);
+            });
+
+        });
+    </script>
+</body>
+
+</html>

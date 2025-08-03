@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case Use</title>
+</head>
+
+<body>
+    <p>Check Number Is Prime or Not</p>
+    <label for="input">Enter Number:</label>
+    <input id="input" type="number">
+    <button type="button" onclick="primeNumber()">OK</button>
+    <p id="result"></p>
+    <script>
+        function primeNumber() {
+            let x = parseInt(document.getElementById("input").value);
+            let result = document.getElementById("result");
+
+            if (isPrime(x)) {
+                result.innerHTML = `${x} is prime Number`;
+            } else {
+                result.innerHTML = `${x} is not prime Number`;
+            }
+        }
+        function isPrime(num) {
+            if (num <= 1) return false;
+            if (num === 2) return true;
+            if (num % 2 === 0) return false;
+            for (let i = 3; i <= Math.sqrt(num); i += 2) {
+                if (num % i === 0) return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>

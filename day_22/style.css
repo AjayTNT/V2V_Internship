@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.compuer-container{
+    flex-direction: column;
+  
+}
+.compuer{
+    height: 85vh;
+    width: 75vw;
+    border: solid black 15px;
+    border-bottom: solid black 40px;
+    border-radius: 20px;
+}
+.top-stand{
+    height: 10vh;
+    width: 10vw;
+    background-color: black;
+}
+.top-stand .hole{
+    height:8vh;
+    width: 8vh;
+    border-radius: 4vh;
+    background-color: white;
+}
+.bottom-stand{
+    height: 30px;
+    width: 20vw;
+    border-radius: 15px;
+    background-color: black;
+}
+.mobile{
+    background-image: url(lock.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 10px black;
+    height: 600px;
+    width: 300px;
+    border-radius: 18px;
+}
+.mobile .notch{
+    height: 20px;
+    width: 80px;
+    background: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.mobile hr{
+    width: 80px;
+    height: 6px;
+    margin-bottom: 6px;
+    background-color: rgba(128, 128, 128, 0.452);
+    border-radius: 3px;
+}
+.tag{
+    height: 100%;
+    border: solid black 1px;
+    font-family:Helvetica, sans-serif;
+    font-size: 15rem;
+    color: blueviolet;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case Use</title>
+</head>
+
+<body>
+    <label for="input">Enter Number:</label>
+    <input id="input" type="number">
+    <button type="button" onclick="selectDay()">OK</button>
+    <p id="result"></p>
+    <script>
+        function selectDay() {
+            let x = parseInt(document.getElementById("input").value);
+            let result = document.getElementById("result");
+            switch (x) {
+                case 1:
+                    result.innerHTML = "Selected Day: Monday";
+                    break;
+                case 2:
+                    result.innerHTML = "Selected Day: Tuesday";
+                    break;
+                case 3:
+                    result.innerHTML = "Selected Day: Wednesday";
+                    break;
+                case 4:
+                    result.innerHTML = "Selected Day: Thursday";
+                    break;
+                case 5:
+                    result.innerHTML = "Selected Day: Friday";
+                    break;
+                case 6:
+                    result.innerHTML = "Selected Day: Saturday";
+                    break;
+                case 7:
+                    result.innerHTML = "Selected Day: Sunday";
+                    break;
+                default:
+                    result.innerHTML = "Invalid Choice";
+            }
+        }
+    </script>
+</body>
+
+</html>
